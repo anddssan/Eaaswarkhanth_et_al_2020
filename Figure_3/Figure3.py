@@ -35,7 +35,7 @@ plt.figure(figsize=(16, 6))
 # first three Line Plots in the figure (iHS, XP-EHH and PBS results).
 # While the (commented) code in lines 96-110 will draw the last Line
 # Plot (LLRS results). Thus, the correct usage of this script is as
-# followd: 1) Run this script 'as is' to create Output1.png with the
+# follows: 1) Run this script 'as is' to create Output1.png with the
 # first three Line Plots; and 2) Comment the lines 44-93, uncomment
 # lines 96-110 (deleting the """ in lines 94 and 111) and then run the
 # script again in order to create Output2.png with the last Line Plot.

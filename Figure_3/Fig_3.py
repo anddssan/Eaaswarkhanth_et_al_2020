@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 # Load the dataset into a pandas DataFrame. The dataset used here is a
 # subset of Tablet S1, in the form of the mainRegion.csv file. It
 # contains the values that resulted from all the selection tests, but
-# only on for the 86 SNPs located around the TNKS gene (specifically,
+# only for the 86 SNPs located around the TNKS gene (specifically,
 # Chr 8: 9300000-9700000, GRCh37/hg19).
 file1 = "mainRegion.csv"
 df = pd.read_csv(file1)

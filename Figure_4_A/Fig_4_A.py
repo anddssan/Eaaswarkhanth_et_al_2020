@@ -3,7 +3,7 @@
 
 # pip install seaborn
 
-# Import libraries.
+# Import required libraries.
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -19,11 +19,11 @@ df = pd.read_csv(file1)
 # Set to discriminate the KWT subpopulations in the final plot.
 subpop = df.pop("Subpops")
 
-# Draw the full plot
+# Draw the full plot.
 lut = dict(zip(subpop.unique(), ["red", "whitesmoke", "green"]))
 row_colors = subpop.map(lut)
 hm = sns.clustermap(df, yticklabels=False, col_cluster=False,
-                    standard_scale=1, row_colors=row_colors, 
+                    standard_scale=1, row_colors=row_colors,
                     cmap=["lightgray", "black"])
 hm.cax.set_visible(False)
 hm.ax_row_dendrogram.set_visible(False)

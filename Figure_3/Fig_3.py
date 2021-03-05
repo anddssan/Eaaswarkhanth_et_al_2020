@@ -3,7 +3,7 @@
 
 # pip install seaborn
 
-# Import libraries.
+# Import required libraries.
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt

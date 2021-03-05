@@ -24,6 +24,6 @@ venn(list(df$SNP[df$iHS>=2], df$SNP[df$`XP-EHH.KWT.vs.CEU`>0],
      zcolor = c("red", "orange", "yellow", "green", "cyan", "blue", "violet"), 
      col = c("red", "orange", "yellow", "green", "cyan", "blue", "violet"))
 
-# The output was further modified using an image editor (in order to highlight 
-# only the value in the intersection of all the sets, and for proper set 
-# labelling).
+# The output was further modified using an image editor (in order to 
+# highlight only the value in the intersection of all the sets, and for 
+# proper set labelling).

@@ -44,11 +44,11 @@ plt.figure(figsize=(16, 6))
 ax1 = plt.subplot(3, 1, 1)
 plt.plot(x, y1, linewidth=3, color='firebrick', label="KWT")
 plt.setp(ax1.get_xticklabels(), fontsize=6)
-plt.hlines(2, 9300000, 9700000, linestyles='dashed',
-           color='k', label='Threshold')
+plt.hlines(2, 9300000, 9700000, linestyles='dashed', color='k',
+           label='Threshold')
 plt.legend(bbox_to_anchor=(1, 1), loc=2, borderaxespad=0)
-plt.tick_params(axis='x', which='both', bottom=False,
-                top=False, labelbottom=False)
+plt.tick_params(axis='x', which='both', bottom=False, top=False,
+                labelbottom=False)
 ax1.spines['right'].set_visible(False)
 ax1.spines['top'].set_visible(False)
 ax1.spines['bottom'].set_visible(False)
@@ -59,13 +59,13 @@ ax2 = plt.subplot(3, 1, 2, sharex=ax1)
 plt.plot(x, y2, linewidth=3, color='firebrick', label='KWT vs CEU')
 plt.plot(x, y3, linewidth=3, color='forestgreen', label='KWT vs YRI')
 plt.plot(x, y4, linewidth=3, color='b', label='KWT vs CHB')
-plt.hlines(0, 9300000, 9700000, linestyles='dashed',
-           color='k', label='Threshold')
+plt.hlines(0, 9300000, 9700000, linestyles='dashed', color='k',
+           label='Threshold')
 plt.legend(bbox_to_anchor=(1, 1), loc=2, borderaxespad=0)
 # Make the tick labels invisible.
 plt.setp(ax2.get_xticklabels(), visible=False)
-plt.tick_params(axis='x', which='both', bottom=False,
-                top=False, labelbottom=False)
+plt.tick_params(axis='x', which='both', bottom=False, top=False,
+                labelbottom=False)
 ax2.spines['right'].set_visible(False)
 ax2.spines['top'].set_visible(False)
 ax2.spines['bottom'].set_visible(False)
@@ -75,15 +75,15 @@ ax2.set_xticklabels([])
 ax3 = plt.subplot(3, 1, 3, sharex=ax1)
 plt.plot(x, y5, linewidth=3, color='firebrick', label='KWT vs CEU')
 plt.plot(x, y6, linewidth=3, color='forestgreen', label='KWT vs YRI/CHB')
-plt.plot(x, y7, linewidth=3, color='b',
-         linestyle='dotted', label='KWT vs YRI/CHB')
-plt.hlines(0, 9300000, 9700000, linestyles='dashed',
-           color='k', label='Threshold')
+plt.plot(x, y7, linewidth=3, color='b', linestyle='dotted',
+         label='KWT vs YRI/CHB')
+plt.hlines(0, 9300000, 9700000, linestyles='dashed', color='k',
+           label='Threshold')
 plt.legend(bbox_to_anchor=(1, 1), loc=2, borderaxespad=0)
 # Make the tick labels invisible.
 plt.setp(ax3.get_xticklabels(), visible=False)
-plt.tick_params(axis='x', which='both', bottom=False,
-                top=False, labelbottom=False)
+plt.tick_params(axis='x', which='both', bottom=False, top=False,
+                labelbottom=False)
 ax3.spines['right'].set_visible(False)
 ax3.spines['top'].set_visible(False)
 ax3.spines['bottom'].set_visible(False)
@@ -96,11 +96,11 @@ plt.savefig("Output1.png", dpi=600)
 ax1 = plt.subplot(3, 1, 1)
 plt.plot(x, y8, linewidth=3, color='r', label="KWT")
 plt.setp(ax1.get_xticklabels(), fontsize=6)
-plt.hlines(0, 9300000, 9700000, linestyles='dashed',
-           color='k', label='Threshold')
+plt.hlines(0, 9300000, 9700000, linestyles='dashed', color='k',
+           label='Threshold')
 plt.legend(bbox_to_anchor=(1, 1), loc=2, borderaxespad=0)
-plt.tick_params(axis='x', which='both', bottom=False,
-                top=False, labelbottom=False)
+plt.tick_params(axis='x', which='both', bottom=False, top=False,
+                labelbottom=False)
 ax1.spines['right'].set_visible(False)
 ax1.spines['top'].set_visible(False)
 ax1.spines['bottom'].set_visible(False)

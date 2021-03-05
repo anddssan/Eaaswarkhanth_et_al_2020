@@ -22,9 +22,8 @@ subpop = df.pop("Subpops")
 # Draw the full plot.
 lut = dict(zip(subpop.unique(), ["red", "whitesmoke", "green"]))
 row_colors = subpop.map(lut)
-hm = sns.clustermap(df, yticklabels=False, col_cluster=False,
-                    standard_scale=1, row_colors=row_colors,
-                    cmap=["lightgray", "black"])
+hm = sns.clustermap(df, yticklabels=False, col_cluster=False, standard_scale=1,
+                    row_colors=row_colors, cmap=["lightgray", "black"])
 hm.cax.set_visible(False)
 hm.ax_row_dendrogram.set_visible(False)
 plt.setp(hm.ax_heatmap.xaxis.get_majorticklabels(), rotation=0)
